@@ -2,7 +2,7 @@
 <script setup lang="ts">
 import AppTs from './App.ts'
 
-let {user, password, dept, userLogin} = AppTs()
+let {user, password, dept, info, userLogin, userInfo} = AppTs()
 
 </script>
 
