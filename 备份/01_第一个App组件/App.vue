@@ -1,10 +1,10 @@
 <template>
-  <div class = "app">
+  <div class="app">
     <h1>vue_ts_study</h1>
   </div>
 </template>
 
-<script lang = "ts">
+<script lang="ts">
   export default {
     name:'App', // 组件名
   }
