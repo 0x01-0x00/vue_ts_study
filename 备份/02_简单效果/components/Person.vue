@@ -11,24 +11,23 @@
 <script lang="ts">
   export default {
     name:'Person',
-    setup() {
-      // data
-      let name = '张三' // 非响应式数据
-      let age = 18
-      let tel = '18269776130'
-
-      // methods
-      function changeName() {
-        name = '钟涛'
+    data(){
+      return {
+        name:'钟涛',
+        age:18,
+        tel:'18269776130',
       }
-      function changeAge() {
-        age += 1
-      }
-      function showTel() {
-        alert(tel)
-      }
-
-      return {name, age, tel, changeName, changeAge, showTel}
+    },
+    methods:{
+      changeName() {
+        this.name = '张三'
+      },
+      changeAge() {
+        this.age += 1
+      },
+      showTel() {
+        alert(this.tel)
+      },
     }
   }
 </script>

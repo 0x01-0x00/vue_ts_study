@@ -1,5 +1,8 @@
 <template>
-  <Person></Person>
+  <div class = "app">
+    <h1>vue_ts_study</h1>
+    <Person></Person>
+  </div>
 </template>
 
 <script lang="ts">
@@ -14,5 +17,8 @@
 </script>
 
 <style>
-
+  .app {
+    background-color: #a33333;
+    color: #887474;
+  }
 </style>
