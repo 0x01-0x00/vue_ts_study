@@ -15,21 +15,17 @@
 </script>
 
 <script setup lang="ts">
-    import { ref } from 'vue'
-
     // data
-    let name = ref('张三') // 响应式数据
-    let age = ref(18)
+    let name = '张三' // 非响应式数据
+    let age = 18
     let tel = '18269776130'
 
     // methods
     function changeName() {
-      name.value = '钟涛'
-      console.log(name.value)
+      name = '钟涛'
     }
     function changeAge() {
-      age.value += 1
-      console.log(age.value)
+      age += 1
     }
     function showTel() {
       alert(tel)
